@@ -1,0 +1,479 @@
+html {
+  background: black;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+}
+
+#wrap {
+  min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
+  background: url("../img/clouds_top.png"), url("../img/clouds_bottom.png"), url("../img/pattern.png"), black;
+  background-repeat: repeat-y, no-repeat, repeat, repeat;
+  background-position: top center, bottom center, 0 0, 0
+}
+
+#main {
+  color: #d77351;
+  padding-top: 1em;
+}
+
+#main .popover-content,
+#main .popover-title {
+  color: black;
+}
+
+#main .form-actions {
+  background: inherit;
+  border: none;
+  padding: 0px;
+}
+
+#main .well {
+  color: black;
+}
+
+#main .well:after {
+  /* ensure wells contain all their floating content */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main h1 {
+  margin: 0;
+  padding: 0 24px;
+  line-height: 47px;
+  background-color: black;
+  background-image: linear-gradient(to left, #841064, black);
+  font-family: 'Alegreya';
+  font-size: 30px;
+  font-weight: bold;
+  color: #00ada1;
+}
+
+#main section {
+  width: 100%;
+  float: left;
+  padding: 0 10px 10px 10px;
+  color: black;
+  background: #d77351;
+  margin-bottom: 1em;
+  background-image: linear-gradient(to left, #f1e2c4, #d77351);
+}
+
+#main section section {
+  background: #f1e2c4;
+  box-shadow: 2px 2px 15px -5px #d77351;
+}
+
+#main section h1,
+#main section section h2 {
+  margin: 0 -10px;
+  padding: 0 24px;
+  line-height: 47px;
+  background-color: black;
+  background-image: linear-gradient(to left, #841064, black);
+  font-family: 'Alegreya';
+  font-size: 30px;
+  font-weight: bold;
+  color: #00ada1;
+  margin-bottom: 0.5em;
+}
+
+#main section p {
+  padding-left: 12px;
+}
+
+#main li p {
+  padding-left: 0;
+}
+
+#main table {
+  width: 100%;
+}
+
+#main table tr {
+  border-bottom: 1px solid #b5b7c1;
+}
+
+#main table th,
+#main table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #b5b7c1;
+  background: #aaf1a3;
+  font-size: 16px;
+  color: black;
+}
+
+#main table td.title {
+  background-color: black;
+  background-image: linear-gradient(to left, #841064, black);
+  border: 1px solid #6c6d73;
+  font-size: 16px;
+  color: #00ada1;
+  line-height: 26px;
+}
+
+#main table th,
+#main table td.scheduleslot {
+  background: #00ada1;
+  color: white;
+  border: 1px solid #6c6d73;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+#main table th a {
+  color: white;
+}
+
+#main table td a {
+  color: #841064;
+}
+
+#main table td.title a {
+  color: #00ada1;
+}
+
+#main table td a:hover {
+  color: #00ada1;
+}
+
+#main table th a:hover,
+#main table td.title a:hover {
+  color: #aaf1a3;
+}
+
+#main table th span {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  line-height: 26px;
+}
+
+#notes a {
+  color: #841064;
+}
+
+/* Highlights */
+
+#main table td.schedule {
+  background: #aaf1a3;
+  border: solid 1px #b5b7c1;
+}
+
+#main table td.schedule-break {
+  background: #f1e2c4;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#main table td.schedule-keynote {
+  background: #f1e2c4;
+  background-image: linear-gradient(to left, #6de4b8, #e4838f);
+  text-align: center;
+}
+
+#main table td.unavailable {
+  background: #6c6d73;
+  font-size: 16px;
+  color: #00ada1;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#main table th.schedule-highlight-venue {
+   filter: brightness(150%);
+}
+
+#main table td.schedule-highlight-venue a {
+   color: #6de4b8;
+}
+
+/* We unset the highlight-venue effect for breaks using CSS ordering */
+#main table td.schedule-break a {
+  color: black;
+}
+
+#main table td.schedule-break a:hover {
+  color: #00ada1;
+}
+
+#main table td.schedule-placeholder {
+  background: #d77351;
+  border: solid 1px #b5b7c1;
+  font-style: italic;
+}
+
+#main table td.schedule-placeholder a {
+  color: rgba(0, 38, 66, 0.5);
+}
+
+#main table td.unavailable a {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+#logos {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logos img {
+  padding: 10px 20px;
+}
+
+#legal {
+  text-align: center;
+  font-family: 'Alegreya';
+  font-size: 30px;
+  color: #aaf1a3;
+  padding-bottom: 15px;
+}
+
+#credits {
+  text-align: center;
+  font-family: 'Alegreya';
+  font-size: 20px;
+  color: #d77351;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+#credits a {
+  color: #00ada1;
+}
+
+#logo_bottom {
+  /* this padding needs to be big enough to avoid clouds_bottom.png covering text. */
+  padding-bottom: 199px;
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  background: black;
+  color: #d77351;
+  width: 100%;
+  clear: both;
+  padding: 10px 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+#wafer-edit-schedule-bucket {
+  background: #ccc;
+}
+
+.wafer-speakers .wafer-speakers-logo img {
+  border-radius: 50%;
+  border: 4px solid #00ada1;
+  padding: 10px;
+}
+
+.wafer-speakers .wafer-speakers-logo {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.wafer-speakers .wafer-speakers-name {
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
+.wafer-profile #profile-avatar {
+  text-align center;
+  margin-top: 15px;
+}
+
+.wafer-profile #profile-avatar img {
+  border-radius: 50%;
+  border: 4px solid #00ada1;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.wafer.list div:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.wafer.list div:nth-child(2n + 1) {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+/* Talks on profile pages */
+
+.card {
+    background: #f1e2c4;
+    border-radius: 0;
+}
+
+.card a {
+    color: #841064;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #d77351;
+}
+
+/* fix icons on top nav bar */
+ul.navbar-nav li.icon a {
+  padding: 12px;
+}
+
+/* override buttons */
+
+ul.btn-group {
+  list-style: none;
+}
+
+.btn-primary {
+  margin: 0 0 2px 2px;
+  background-color: #00ada1;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #aaf1a3;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #00ada1;
+  text-shadow: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #6c6d73;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary {
+  margin: 0 0 4px 4px;
+  background-color: #00ada1;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #aaf1a3;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.btn-secondary.disabled,
+.btn-secondary[disabled] {
+  background-color: #6c6d73;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: #00ada1;
+}
+
+#main section section a {
+  color: #841064;
+}
+
+#main section section a:hover,
+#main section section a:focus {
+  color: #d77351;
+}
+
+/* NAV */
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+  background-color: black;
+  color: #d77351;
+  padding: 10px;
+  margin: 0px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #00ada1;
+}
+
+.navbar-dark .navbar-nav li.dropdown > .dropdown-toggle .caret,
+.navbar-dark .navbar-nav li.dropdown > .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: black;
+  background-color: #00ada1;
+  background-image: linear-gradient(to left, #00ada1, #aaf1a3);
+}
+
+.container-fluid {
+  padding-top: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: black ! important;
+  font-family: 'Source Sans Pro', 'sans serif';
+}
+
+.pull-right {
+  margin: 0;
+}
+
+.profile-links {
+  padding: 25px;
+  align-items: flex-end;
+}
+
+form {
+  background: #d77351;
+  background-image: linear-gradient(to left, #f1e2c4, #d77351);
+  padding: 10px;
+  color: black;
+}
+
+.text-muted {
+    color: #313539 !important;
+    font-style: italic;
+}
+
+@media only screen and (max-device-width:768px) {
+  #footer {
+    position: static;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+
+}
