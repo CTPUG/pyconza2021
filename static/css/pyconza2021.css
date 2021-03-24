@@ -103,7 +103,7 @@ body {
   padding: 8px 12px;
   text-align: left;
   border: 1px solid #9d9c9b;
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 0.75);
   font-size: 16px;
   color: black;
 }
@@ -161,7 +161,7 @@ body {
 /* Highlights */
 
 #main table td.schedule {
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 0.75);
   border: solid 1px #9d9c9b;
 }
 
@@ -173,7 +173,7 @@ body {
 }
 
 #main table td.schedule-keynote {
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 0.75);
   background-image: linear-gradient(to left, #56a4ca, #fb3640);
   text-align: center;
 }
@@ -197,11 +197,11 @@ body {
 
 /* We unset the highlight-venue effect for breaks using CSS ordering */
 #main table td.schedule-break a {
-  color: #9d9c9b;
+  color: #e2e2e2;
 }
 
 #main table td.schedule-break a:hover {
-  color: #e2e2e2;
+  color: #56a4ca;
 }
 
 #main table td.schedule-keynote a {
@@ -321,7 +321,7 @@ body {
 /* Talks on profile pages */
 
 .card {
-    background: #e2e2e2;
+    background: rgba(226, 226, 226, 0.75);
     border-radius: 0;
 }
 
