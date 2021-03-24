@@ -58,13 +58,13 @@ body {
   float: left;
   padding: 0 10px 10px 10px;
   color: black;
-  background: #b83c3a;
+  background: #fd7970;
   margin-bottom: 1em;
-  background-image: linear-gradient(to left, #e2e2e2, #b83c3a);
+  background-image: linear-gradient(to left, #e2e2e2, #fd7970);
 }
 
 #main section section {
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 0.75);
   box-shadow: 2px 2px 15px -5px #b83c3a;
 }
 
@@ -416,11 +416,11 @@ a:focus {
 /* NAV */
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-nav .nav-link {
-  color: #b83c3a;
+  color: #fd7970;
   padding: 10px;
   margin: 0px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .navbar-dark .navbar-brand:hover,
@@ -464,8 +464,8 @@ a:focus {
 }
 
 form {
-  background: #b83c3a;
-  background-image: linear-gradient(to left, #e2e2e2, #b83c3a);
+  background: #fd7970;
+  background-image: linear-gradient(to left, #e2e2e2, #fd7970);
   padding: 10px;
   color: black;
 }
