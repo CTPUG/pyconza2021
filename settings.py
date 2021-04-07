@@ -29,24 +29,24 @@ WAFER_MENUS += (
     #},
     #{"menu": "tickets", "label": _("Tickets"), "items": []},
     #{"menu": "sponsors", "label": _("Sponsors"), "items": []},
-    #{
-    #    "menu": "talks",
-    #    "label": _("Talks"),
-    #    "items": [
-    #                   {"name": "schedule", "label": _("Schedule"),
-    #                    "url": reverse_lazy("wafer_full_schedule")},
-    #                   {
-    #                       "name": "accepted-talks",
-    #                       "label": _("Accepted Talks"),
-    #                       "url": reverse_lazy("wafer_users_talks"),
-    #                   },
-    #                   {
-    #                       "name": "speakers",
-    #                       "label": _("Speakers"),
-    #                       "url": reverse_lazy("wafer_talks_speakers"),
-    #                   },
-    #    ],
-    #},
+    {
+        "menu": "talks",
+        "label": _("Talks"),
+        "items": [
+                       #{"name": "schedule", "label": _("Schedule"),
+                       # "url": reverse_lazy("wafer_full_schedule")},
+                       #{
+                       #    "name": "accepted-talks",
+                       #    "label": _("Accepted Talks"),
+                       #    "url": reverse_lazy("wafer_users_talks"),
+                       #},
+                       #{
+                       #    "name": "speakers",
+                       #    "label": _("Speakers"),
+                       #    "url": reverse_lazy("wafer_talks_speakers"),
+                       #},
+        ],
+    },
     #{"menu": "news", "label": _("News"), "items": []},
     {
         "menu": "previous-pycons",
