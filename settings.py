@@ -28,7 +28,7 @@ WAFER_MENUS += (
     #    "items": [],
     #},
     #{"menu": "tickets", "label": _("Tickets"), "items": []},
-    #{"menu": "sponsors", "label": _("Sponsors"), "items": []},
+    {"menu": "sponsors", "label": _("Sponsors"), "items": []},
     {
         "menu": "talks",
         "label": _("Talks"),
@@ -104,12 +104,6 @@ WAFER_MENUS += (
         "label": "Twitter",
         "image": "/static/img/twitter.png",
         "url": "https://twitter.com/pyconza",
-    },
-    {
-        "name": "facebook",
-        "label": "Facebook",
-        "image": "/static/img/facebook.png",
-        "url": "https://www.facebook.com/pyconza",
     },
 )
 
