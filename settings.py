@@ -27,7 +27,7 @@ WAFER_MENUS += (
     #    "label": _("Venue"),
     #    "items": [],
     #},
-    #{"menu": "tickets", "label": _("Tickets"), "items": []},
+    {"menu": "tickets", "label": _("Tickets"), "items": []},
     {"menu": "sponsors", "label": _("Sponsors"), "items": []},
     {
         "menu": "talks",
