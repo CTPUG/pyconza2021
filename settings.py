@@ -108,6 +108,40 @@ WAFER_MENUS += (
 )
 
 
+def tickets_sold(ticket_types):
+    """ Return number of tickets sold. """
+    from wafer.tickets.models import Ticket, TicketType
+
+    ticket_type_ids = TicketType.objects.filter(name__in=ticket_types)
+    return Ticket.objects.filter(type_id__in=ticket_type_ids).count()
+
+
+def main_conference_tickets_sold():
+    """ Return number of tickets sold for the main conference. """
+    from wafer.tickets.models import Ticket, TicketType
+
+    TUTORIAL_TICKET_TYPES = []
+    tutorial_type_ids = TicketType.objects.filter(
+        name__in=TUTORIAL_TICKET_TYPES)
+
+    return Ticket.objects.exclude(type_id__in=tutorial_type_ids).count()
+
+
+def main_conference_tickets_remaining():
+    """ Return number of main conference tickets remaining. """
+    return max(0, 300 - main_conference_tickets_sold())
+
+
+def early_bird_tickets_remaining():
+    """ Return number of early bird tickets remaining. """
+    early_bird_ticket_types = [
+        "Student (Early Bird)",
+        "Individual (Early Bird)",
+        "Corporate (Early Bird)",
+        "Pensioner (Early Bird)",
+    ]
+    return max(0, 100 - tickets_sold(early_bird_ticket_types))
+
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 MARKITUP_FILTER = (
@@ -122,6 +156,18 @@ MARKITUP_FILTER = (
             "markdown.extensions.codehilite",
             "mdx_variables",
         ],
+        "extension_configs": {
+            "mdx_variables": {
+                "vars": {
+                    "main_conference_tickets_sold":
+                        main_conference_tickets_sold,
+                    "main_conference_tickets_remaining":
+                        main_conference_tickets_remaining,
+                    "early_bird_tickets_remaining":
+                        early_bird_tickets_remaining,
+                }
+            }
+        },
     },
 )
 
@@ -132,7 +178,8 @@ WAFER_TALKS_OPEN = True
 USE_TZ = True
 TIME_ZONE = "Africa/Johannesburg"
 
-# Default static and media locations - we rely on apache to redirect accordingly
+# Default static and media locations - we rely on apache to redirect
+# accordingly.
 # These are named to not clash with the repo contents
 STATIC_ROOT = os.path.join(pyconzadir, "localstatic")
 
