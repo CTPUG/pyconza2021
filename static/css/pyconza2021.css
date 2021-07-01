@@ -72,14 +72,22 @@ body {
 #main section section h2 {
   margin: 0 -10px;
   padding: 0 24px;
-  line-height: 47px;
   background-color: black;
   background-image: linear-gradient(to left, #0a2463, black);
   font-family: 'Alegreya';
-  font-size: 30px;
   font-weight: bold;
   color: #56a4ca;
   margin-bottom: 0.5em;
+}
+
+#main section h1 {
+  line-height: 47px;
+  font-size: 30px;
+}
+
+#main section h2 {
+  line-height: 38px;
+  font-size: 24px;
 }
 
 #main section p {
