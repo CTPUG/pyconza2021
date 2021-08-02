@@ -170,6 +170,7 @@ MARKITUP_FILTER = (
         },
     },
 )
+WAFER_PAGE_MARKITUP_FILTER = MARKITUP_FILTER
 
 # Talks submissions are open
 WAFER_TALKS_OPEN = True
