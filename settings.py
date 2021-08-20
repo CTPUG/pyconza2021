@@ -35,16 +35,16 @@ WAFER_MENUS += (
         "items": [
                        #{"name": "schedule", "label": _("Schedule"),
                        # "url": reverse_lazy("wafer_full_schedule")},
-                       #{
-                       #    "name": "accepted-talks",
-                       #    "label": _("Accepted Talks"),
-                       #    "url": reverse_lazy("wafer_users_talks"),
-                       #},
-                       #{
-                       #    "name": "speakers",
-                       #    "label": _("Speakers"),
-                       #    "url": reverse_lazy("wafer_talks_speakers"),
-                       #},
+                       {
+                           "name": "accepted-talks",
+                           "label": _("Accepted Talks"),
+                           "url": reverse_lazy("wafer_users_talks"),
+                       },
+                       {
+                           "name": "speakers",
+                           "label": _("Speakers"),
+                           "url": reverse_lazy("wafer_talks_speakers"),
+                       },
         ],
     },
     #{"menu": "news", "label": _("News"), "items": []},
