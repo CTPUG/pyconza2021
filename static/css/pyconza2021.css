@@ -405,11 +405,16 @@ ul.btn-group {
 a {
   color: white;
   font-weight: bold;
+  text-decoration: underline;
+}
+
+a.btn, table a, nav a {
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #247ba0;
+  color: #fd7970;
 }
 
 #main section section a {
