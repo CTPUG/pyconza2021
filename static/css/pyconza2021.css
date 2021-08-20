@@ -417,13 +417,28 @@ a:focus {
   color: #fd7970;
 }
 
-#main section section a {
+#main section a, #main section section a {
   color: #0a2463;
 }
 
+#main section a:hover,
+#main section a:focus,
 #main section section a:hover,
 #main section section a:focus {
   color: #b83c3a;
+}
+
+#main section h1 a, #main section section h2 a {
+  color: #56a4ca;
+  text-decoration: none;
+}
+
+#main section h1 a:hover,
+#main section h1 a:focus,
+#main section section h2 a:hover,
+#main section section h2 a:focus {
+  color: #fd7970;
+  text-decoration: none;
 }
 
 /* NAV */
