@@ -513,3 +513,18 @@ form {
   }
 
 }
+
+/* sponsor page:
+
+   * constrain logos to page width for phones.
+   * should probably be made the default in wafer.
+*/
+
+.sponsor-details div {
+    padding: 0.5em;
+    max-width: 100%;
+}
+
+.sponsor-details img {
+    max-width: 100%;
+}
