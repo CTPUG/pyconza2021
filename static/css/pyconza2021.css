@@ -521,10 +521,10 @@ form {
 */
 
 .sponsor-details div {
-    padding: 0.5em;
-    max-width: 100%;
+    padding: 0.5em !important;
+    max-width: 100% !important;
 }
 
 .sponsor-details img {
-    max-width: 100%;
+    max-width: 100% !important;
 }
