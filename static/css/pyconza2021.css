@@ -520,20 +520,13 @@ form {
    * should probably be made the default in wafer.
 */
 
-.sponsor-detail div {
+.sponsor-detail div,
+.wafer-sponsor .card-title + div {
     padding: 0.5em !important;
     max-width: 100% !important;
 }
 
-.sponsor-detail div > img {
-    max-width: 100% !important;
-}
-
-.wafer-sponsor > .card-title + div {
-    padding: 0.5em !important;
-    max-width: 100% !important;
-}
-
-.wafer-sponsor > .card-title + div > img {
+.sponsor-detail div img,
+.wafer-sponsor .card-title + div img {
     max-width: 100% !important;
 }
