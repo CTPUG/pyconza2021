@@ -520,11 +520,11 @@ form {
    * should probably be made the default in wafer.
 */
 
-.sponsor-details div {
+.sponsor-detail div {
     padding: 0.5em !important;
     max-width: 100% !important;
 }
 
-.sponsor-details img {
+.sponsor-detail img {
     max-width: 100% !important;
 }
