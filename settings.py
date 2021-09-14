@@ -47,7 +47,7 @@ WAFER_MENUS += (
                        },
         ],
     },
-    #{"menu": "news", "label": _("News"), "items": []},
+    {"menu": "news", "label": _("News"), "items": []},
     {
         "menu": "previous-pycons",
         "label": _("Past PyConZAs"),
