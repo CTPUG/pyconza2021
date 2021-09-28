@@ -408,7 +408,7 @@ a {
   text-decoration: underline;
 }
 
-a.btn, table a, nav a {
+a.btn, table a, nav a, #wafer-sponsors a {
   text-decoration: none;
 }
 
