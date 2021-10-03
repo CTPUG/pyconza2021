@@ -22,19 +22,17 @@ TEMPLATES[0]["DIRS"] = (os.path.join(pyconzadir, "templates"),) + TEMPLATES[0]["
 
 WAFER_MENUS += (
     {"menu": "about", "label": _("About"), "items": []},
-    #{
-    #    "menu": "venue",
-    #    "label": _("Venue"),
-    #    "items": [],
-    #},
+    {"menu": "venue", "label": _("Venue"), "items": []},
     {"menu": "tickets", "label": _("Tickets"), "items": []},
     {"menu": "sponsors", "label": _("Sponsors"), "items": []},
     {
         "menu": "talks",
         "label": _("Talks"),
         "items": [
-                       #{"name": "schedule", "label": _("Schedule"),
-                       # "url": reverse_lazy("wafer_full_schedule")},
+                       {
+                            "name": "schedule", "label": _("Schedule"),
+                            "url": reverse_lazy("wafer_full_schedule"),
+                       },
                        {
                            "name": "accepted-talks",
                            "label": _("Accepted Talks"),
