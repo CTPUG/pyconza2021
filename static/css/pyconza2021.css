@@ -180,9 +180,15 @@ body {
   vertical-align: middle;
 }
 
-#main table td.schedule-keynote {
+#main table td.talk-type-keynote {
   background: rgba(226, 226, 226, 0.75);
   background-image: linear-gradient(to left, #56a4ca, #fb3640);
+  text-align: center;
+}
+
+#main table td.talk-type-panel {
+  background: rgba(226, 226, 226, 0.75);
+  background-image: linear-gradient(to left, #56a4ca, #fd7970);
   text-align: center;
 }
 
@@ -212,16 +218,18 @@ body {
   color: #56a4ca;
 }
 
-#main table td.schedule-keynote a {
+#main table td.talk-type-keynote a,
+#main table td.talk-type-panel a {
   color: #0a2463;
 }
 
-#main table td.schedule-keynote a:hover {
+#main table td.talk-type-keynote a:hover,
+#main table td.talk-type-panel a:hover {
   color: #e2e2e2;
 }
 
 #main table td.schedule-placeholder {
-  background: #b83c3a;
+  background: #8698b0;
   border: solid 1px #9d9c9b;
   font-style: italic;
 }
