@@ -127,7 +127,7 @@ def main_conference_tickets_sold():
 
 def main_conference_tickets_remaining():
     """ Return number of main conference tickets remaining. """
-    return max(0, 300 - main_conference_tickets_sold())
+    return max(0, 250 - main_conference_tickets_sold())
 
 
 def early_bird_tickets_remaining():
@@ -138,7 +138,7 @@ def early_bird_tickets_remaining():
         "Corporate (Early Bird)",
         "Pensioner (Early Bird)",
     ]
-    return max(0, 100 - tickets_sold(early_bird_ticket_types))
+    return max(0, 250 - tickets_sold(early_bird_ticket_types))
 
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
