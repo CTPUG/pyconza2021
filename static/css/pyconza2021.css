@@ -313,7 +313,7 @@ body {
 }
 
 .wafer-profile #profile-avatar {
-  text-align center;
+  text-align: center;
   margin-top: 15px;
 }
 
